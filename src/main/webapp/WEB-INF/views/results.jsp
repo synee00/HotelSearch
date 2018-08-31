@@ -8,31 +8,29 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Hotel Search</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/hotelStyle.css">
 </head>
-<body>
-	<h1>Hotel Search</h1>
-	<br>
-	<p class="buttons">
-		<a href="/"><button type="button" class="btn btn-secondary">Start a new search</button></a>
-	</p>
-	<div class="contentBlock">
-		<table>
-				<thead>
-					<tr>
-			          <th>Hotel</th><th>City</th><th>Price per night</th>
-			        </tr>
-				</thead>
+<body class="contentList">
+      <h1>Hotel Search</h1>
+      <br>
+      <p class="buttons">
+        <a href="/"><button type="button" class="btn btn-secondary">Start a new search</button></a>
+      </p>
+      <div class="contentBlock">
+        <table>
+          <thead>
+            <tr>
+              <th>Hotel</th><th class="center">City</th><th class="alignRight">Price per night</th>
+            </tr>
+          </thead>
 				<tbody>
-						<tr>
-							<c:forEach var="hotel" items="${hotels}">
-						
-						 	<td> • ${hotel.cool_name}</td>
-							<td>${hotel.city}</td>
-							<td class="alignRight">${hotel.pricePerNight}</td>
-							
-							</c:forEach>					
+					<c:forEach var="hotel" items="${hotels}">
+						<tr>						
+						 	<td>${hotel.name}</td>
+                			<td class="center">${hotel.city}</td>
+                			<td class="alignRight"> $ ${hotel.pricePerNight}</td>
 						</tr>
+					</c:forEach>	
 				</tbody>
 			</table>
 			

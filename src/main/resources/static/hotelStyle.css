@@ -1,0 +1,104 @@
+@charset "UTF-8";
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+
+body {
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  padding: 5px 25px;
+  font-size: 18px;
+  margin: 0;
+  color: #444;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Merriweather", serif;
+  font-size: 32px;
+}
+.content{
+  background-image: url("https://res.cloudinary.com/synee/image/upload/v1535709693/architecture-beach-buildings-702343_mrcchs.jpg");
+  background-position: center center;
+  background-repeat:  no-repeat;
+  background-attachment: fixed;
+  background-size:  cover;
+  background-color: #999;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  padding: 5px 25px;
+  margin: 0;
+  color: #c7c7c7;
+}
+
+.contentList{
+  background-image: url("https://res.cloudinary.com/synee/image/upload/v1535709699/bedroom-door-entrance-271639_zzyyio.jpg");
+  background-size:cover;
+  background-attachment: fixed;
+}
+.w3-animate-left{
+  position:relative;
+  animation:animateleft 2s
+}
+@keyframes animateleft{
+  from{left:-300px;opacity:0} to{left:0;opacity:1}
+}
+
+.contentBlock1{
+  font-family: sans-serif;
+  height: 100%;
+  width: 45%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    rgba(62, 105, 255, 0.7), 
+    rgba(62, 105, 255, 0.88)
+  );
+  overflow-x: hidden;
+  padding-top: 20px;
+  
+  font-family: "Merriweather";
+  color: white;
+ 
+  text-align: center;
+}
+.contentBlock1 h1{
+  margin-top: 150px;
+}
+
+.contentBlock{
+  background-color: black;
+  font-family: "Merriweather";
+  color: white;
+  opacity: 0.8;
+  padding: 10px;
+  width: 100%;
+  
+}
+.contentBlock table{
+  background-color: black;
+  font-family: "Merriweather";
+  color: white;
+  opacity: 0.8;
+  padding: 10px;
+  width: 100%;
+  border-bottom: 1px solid white;
+}
+.contentBlock td{
+	  border-bottom: 1px solid white;
+}
+.contentBlock th{
+	padding-bottom: 20px;
+}
+.alignRight{
+  text-align: right;
+  padding: 0px 20px 0px 100px;
+  margin: auto;
+}
+.center{
+  text-align: center;
+  padding: 0px 20px 0px 120px;
+  margin: auto;
+}
